@@ -22,9 +22,9 @@ class BaseModel:
                     self.created_at = datetime.strptime(value, format_date)
                 elif key == 'updated_at':
                     self.updated_at = datetime.strptime(value, format_date)
-                else:
-                    self.created_at = datetime.now()
-                    self.updated_at = datetime.now()
+        else:
+            self.created_at = datetime.now()
+            self.updated_at = datetime.now()
         self.id = str(uuid.uuid4())
 
     def __str__(self):
