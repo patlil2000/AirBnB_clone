@@ -1,11 +1,12 @@
 #!/usr/bin/python3
+"""This model defines the base class"""
+
 import uuid
 from datetime import datetime
-"""A module for the base model"""
 
 
 class BaseModel:
-    """A class for the model"""
+    """A class for the BaseModel"""
 
     def __init__(self):
         """Instantiation of object"""
