@@ -8,12 +8,24 @@ from datetime import datetime
 class BaseModel:
     """A class for the BaseModel"""
 
-    def __init__(self):
-        """Instantiation of object"""
-        self.id = str(uuid.uuid4())
-        self.created_at = datetime.now()
-        self.updated_at = datetime.now()
+    def __init__(self, *args, **kwargs):
+        """Instantiation of object
 
+        Args:
+            -*args : list of arguments
+            -**kwargs: dict of key_value arguments
+        """
+        if kwargs:
+            for key, value in kwargs.items():
+                format_date = "%Y-%m-%dT%H:%M:%S.%f"
+                if key == 'created_at':
+                    self.created_at = datetime.strptime(value, format_date)
+                elif key == 'updated_at':
+                    self.updated_at = datetime.strptime(value, format_date)
+                else:
+                    self.created_at = datetime.now()
+                    self.updated_at = datetime.now()
+        self.id = str(uuid.uuid4())
     def __str__(self):
         """Prints a human readable
         string representation of object"""
