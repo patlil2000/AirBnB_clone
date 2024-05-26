@@ -14,12 +14,6 @@ class BaseModel:
         self.created_at = datetime.now()
         self.updated_at = datetime.now()
 
-    def __setattr__(self, name, value):
-        """Change the object and update time"""
-        if name != "updated_at":
-            self.__dict__["updated_at"] = datetime.now()
-        super().__setattr__(name, value)
-
     def __str__(self):
         """Prints a human readable
         string representation of object"""
