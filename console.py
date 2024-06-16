@@ -15,7 +15,7 @@ class HBNBCommand(cmd.Cmd):
         """
         return True
 
-    def do_EOF(self, arg):
+    def do_EOF(self, line):
         """Exits the command interpreter with EOF (Ctrl+D)"""
         return True
 
