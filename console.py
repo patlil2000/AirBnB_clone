@@ -20,10 +20,11 @@ class HBNBCommand(cmd.Cmd):
         return True
 
     def emptyline(self):
-        """Overrides the default behavior of repeating 
+        """Overrides the default behavior of repeating
         the last command on an empty line
         """
         pass
+
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
