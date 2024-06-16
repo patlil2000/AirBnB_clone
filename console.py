@@ -6,22 +6,21 @@ import cmd
 
 class HBNBCommand(cmd.Cmd):
 
-    """class for the cmd interpreter"""
+    """The class for the command line interpreter"""
 
     prompt = "(hbnb)"
 
     def do_quit(self, line):
-        """Exits the command intepreter
-        """
+        """quits the program"""
         return True
 
     def do_EOF(self, line):
-        """Exits the command interpreter with EOF (Ctrl+D)"""
+        """quits the program with ctrl+D"""
         return True
 
-    def emptyline(self):
-        """Overrides the default behavior of repeating
-        the last command on an empty line
+    def do_emptyline(self):
+        """Overrides the default behaviour of repeating
+        lines
         """
         pass
 
