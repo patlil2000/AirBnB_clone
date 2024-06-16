@@ -14,7 +14,7 @@ class HBNBCommand(cmd.Cmd):
         """quits the program with ctrl+D"""
         return True
 
-    def do_emptyline(self):
+    def emptyline(self):
         """Overrides the default behaviour of repeating
         lines
         """
