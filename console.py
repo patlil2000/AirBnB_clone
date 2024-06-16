@@ -7,8 +7,9 @@ import cmd
 class HBNBCommand(cmd.Cmd):
     prompt = "(hbnb)"
 
-    def do_quit(self, arg):
-        """Exits the command intepreter"""
+    def do_quit(self, line):
+        """Exits the command intepreter
+        """
         return True
 
     def do_EOF(self, arg):
