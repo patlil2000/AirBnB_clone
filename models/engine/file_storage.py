@@ -17,6 +17,7 @@ class FileStorage:
         FileStorage.__objects[key] = obj
 
     def save(self):
+        """Saves the object dictionary to json"""
         objects_dict = {key: obj.to_dict()
                         for key, obj in FileStorage.__objects.items()}
         with open(FileStorage.__file_path, "w") as file:
