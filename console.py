@@ -34,7 +34,7 @@ class HBNBCommand(cmd.Cmd):
         if not line:
             print("** class name missing **")
         elif line not in globals():
-            print("** class name does not exist **")
+            print("** class doesn't exist **")
         else:
             new_instance = globals()[line]()
             new_instance.save()
@@ -47,14 +47,14 @@ class HBNBCommand(cmd.Cmd):
         """
         
         if not line:
-            print("** class name is missing")
+            print("** class name missing")
             return
         parts = line.split()
         if len(parts) == 0 or parts[0] not in globals():
             print("** class doesn't exist **")
             return
         if len(parts) < 2:
-            print("** instance id missing**")
+            print("")
             return
         class_name = parts[0]
         instance_id = parts[1]
@@ -75,7 +75,7 @@ class HBNBCommand(cmd.Cmd):
             print("** class doesn't exist **")
             return
         if len(parts) < 2:
-            print("** instance id missing**")
+            print("** instance id missing **")
             return
         class_name = parts[0]
         instance_id = parts[1]
