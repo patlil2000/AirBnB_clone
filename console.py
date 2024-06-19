@@ -47,7 +47,7 @@ class HBNBCommand(cmd.Cmd):
         """
         
         if not line:
-            print("** class name missing")
+            print("** class name missing **")
             return
         parts = line.split()
         if len(parts) == 0 or parts[0] not in globals():
