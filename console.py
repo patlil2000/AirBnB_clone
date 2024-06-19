@@ -54,7 +54,7 @@ class HBNBCommand(cmd.Cmd):
             print("** class doesn't exist **")
             return
         if len(parts) < 2:
-            print("")
+            print("** instance id missing **")
             return
         class_name = parts[0]
         instance_id = parts[1]
