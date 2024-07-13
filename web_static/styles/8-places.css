@@ -28,9 +28,9 @@
 	width: 100px;
 	height: 60px;
 	display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items horizontally */
-    justify-content: flex-end;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        justify-content: flex-end;
 	background-repeat: no-repeat;
 	background-position: top;
 	
@@ -41,9 +41,9 @@
 	width: 100px;
 	height: 60px;
 	display: flex;
-    flex-direction: column; /* Stack items vertically */
+        flex-direction: column; /* Stack items vertically */
 	justify-content: flex-end;
-    align-items: center;
+        align-items: center;
 	background-repeat: no-repeat;
 	background-position: top;
 
@@ -53,9 +53,9 @@
 	width: 100px;
 	height: 60px;
 	display: flex;
-    flex-direction: column; /* Stack items vertically */
+        flex-direction: column; /* Stack items vertically */
 	justify-content: flex-end;
-    align-items: center;
+        align-items: center;
 	background-repeat: no-repeat;
 	background-position: top;
 }
